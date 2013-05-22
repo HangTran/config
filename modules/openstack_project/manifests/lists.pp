@@ -27,11 +27,11 @@ class openstack_project::lists(
     User::Virtual::Localuser['smaffulli'],
   )
 
-  maillist { 'openstack-it':
+  maillist { 'openstack-vi':
     ensure      => present,
-    admin       => 'stefano@openstack.org',
+    admin       => 'hang.tran@dtt.vn',
     password    => $listpassword,
-    description => 'Discussioni su OpenStack in italiano',
+    description => 'Thảo luận về OpenStack bằng tiếng Việt',
     webserver   => $listdomain,
     mailserver  => $listdomain,
   }
